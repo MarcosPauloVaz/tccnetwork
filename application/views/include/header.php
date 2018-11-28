@@ -97,11 +97,13 @@
 		    {	
 		    	if(data == 'gostar'){
 		    		$('#gost_'+id_publicacao).removeClass('btn-default');
-		    		$('#gost_'+id_publicacao).addClass('btn-primary');
+					$('#gost_'+id_publicacao).addClass('btn-primary');
+					$('#gost_'+id_publicacao).html('<i class="fa fa-star"></i> <span>Desfavoritar</span>');
 		    		$('#gost_'+id_publicacao).attr('style','');
 		    	}else if(data == 'deixar_gostar'){
 		    		$('#gost_'+id_publicacao).removeClass('btn-primary');
-		    		$('#gost_'+id_publicacao).addClass('btn-default');
+					$('#gost_'+id_publicacao).addClass('btn-default');
+					$('#gost_'+id_publicacao).html('<i class="fa fa-star"></i> <span>Favoritar</span>');
 		    		$('#gost_'+id_publicacao).attr('style','color: #3c8dbc;border-color: #367fa9;');
 		    	}
 	    	}

@@ -74,9 +74,9 @@
 									<div class="box-footer clearfix ">
 
 										<?php if(in_array($item->id_publicacao,$gostei)):  ?>
-											<a class="btn btn-primary pull-left" id="gost_<?= $item->id_publicacao  ?>" onclick="gostar_deixardegostar(<?= $this->session->userdata('id_usuario')?>,<?= $item->id_publicacao?>)"><i class="fa fa-thumbs-o-up"></i> <span>Gostei</span></a>
+											<a class="btn btn-primary pull-left" id="gost_<?= $item->id_publicacao  ?>" onclick="gostar_deixardegostar(<?= $this->session->userdata('id_usuario')?>,<?= $item->id_publicacao?>)"><i class="fa fa-star"></i> <span>Desfavoritar</span></a>
 										<?php else:  ?>
-											<a class="btn btn-default pull-left" id="gost_<?= $item->id_publicacao  ?>" onclick="gostar_deixardegostar(<?= $this->session->userdata('id_usuario')?>,<?= $item->id_publicacao?>)" style="color: #3c8dbc;border-color: #367fa9;"><i class="fa fa-thumbs-o-up"></i> <span>Gostei</span></a>
+											<a class="btn btn-default pull-left" id="gost_<?= $item->id_publicacao  ?>" onclick="gostar_deixardegostar(<?= $this->session->userdata('id_usuario')?>,<?= $item->id_publicacao?>)" style="color: #3c8dbc;border-color: #367fa9;"><i class="fa fa-star"></i> <span>Favoritar</span></a>
 										<?php endif;  ?>
 
 										<a class="btn btn-primary pull-right" href="#"><i class="fa fa-download"></i> <span>Download</span></a>
